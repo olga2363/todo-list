@@ -1,0 +1,158 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  font-family: Bad Script;
+}
+
+.todo{
+  &__title{
+    text-transform: uppercase;
+    color: black;
+    margin: 0;
+    padding: 10px 28px;
+    font-weight: normal;
+  }
+
+
+  &__input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 0.5px;
+    padding-left: 25px;
+    border: 3px solid gray;
+    color: gray;
+  }
+
+  &__input:focus {
+    background: #edf1f5;
+    border: 3px solid orange;
+    outline: none;
+    color: orange;
+  }
+
+
+  &__btn {
+    color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    font-family: Bad Script;
+  }
+
+  &__btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid orange;
+  }
+}
+
+#buttons {
+  display: inline-block;
+  text-align: center;
+  margin: 2px 4px;
+}
+
+#todo {
+  margin: 0 auto;
+  box-shadow: 0 0 1em black;
+  max-width: 400px;
+  height: 100%;
+  background: white;
+  position: relative;
+}
+
+#modalwin {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+#modalwin .close {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  font-size: 60px;
+  color: black;
+  cursor: pointer;
+}
+
+#modalwin li {
+  padding: 8px;
+  list-style-type: circle;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+}
+
+.todos {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todos li {
+  background: #f7f7f7;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.todos li span.todo-text {
+  padding: 0 8px;
+}
+
+.todos li:nth-child(2n) {
+  background: #ebd7d1;
+}
+
+.todos li:hover span.todo-trash {
+  width: 50px;
+  opacity: 1.0;
+  margin-left: 5px;
+}
+
+.display {
+  display: none;
+  transition: 0.3s linear;
+}
+
+.checked {
+  color: gray;
+  text-decoration: line-through crimson;
+}
+
+.fa-pencil-alt {
+  float: right;
+  padding-top: 8px 10px;
+}
+
+.fa-trash-alt {
+  color: crimson;
+}
+
+.tips {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
