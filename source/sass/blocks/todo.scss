@@ -84,49 +84,52 @@ body {
   -webkit-transition: 0.5s;
 }
 
-#modalwin .close {
-  position: absolute;
-  top: 15px;
-  right: 40px;
-  font-size: 60px;
-  color: black;
-  cursor: pointer;
-}
+#modalwin {
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+  }
 
-#modalwin li {
-  padding: 8px;
-  list-style-type: circle;
-  font-size: 30px;
-  color: #818181;
-  display: block;
+  li {
+    padding: 8px;
+    list-style-type: circle;
+    font-size: 30px;
+    color: white;
+    display: block;
+  }
 }
-
 .todos {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.todos li {
+.todos{
+  li {
   background: #f7f7f7;
   height: 50px;
   line-height: 50px;
   cursor: pointer;
   font-size: 20px;
-}
+  }
 
-.todos li span.todo-text {
-  padding: 0 8px;
-}
+  li span.todo-text {
+    padding: 0 8px;
+  }
 
-.todos li:nth-child(2n) {
-  background: #ebd7d1;
-}
+  li:nth-child(2n) {
+    background: #ebd7d1;
+  }
 
-.todos li:hover span.todo-trash {
-  width: 50px;
-  opacity: 1.0;
-  margin-left: 5px;
+  li:hover span.todo-trash {
+    width: 50px;
+    opacity: 1.0;
+    margin-left: 5px;
+  }
 }
 
 .display {
@@ -137,11 +140,6 @@ body {
 .checked {
   color: gray;
   text-decoration: line-through crimson;
-}
-
-.fa-pencil-alt {
-  float: right;
-  padding-top: 8px 10px;
 }
 
 .fa-trash-alt {

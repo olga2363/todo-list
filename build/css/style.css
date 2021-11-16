@@ -397,15 +397,14 @@ body {
   top: 15px;
   right: 40px;
   font-size: 60px;
-  color: black;
+  color: white;
   cursor: pointer;
 }
-
 #modalwin li {
   padding: 8px;
   list-style-type: circle;
   font-size: 30px;
-  color: #818181;
+  color: white;
   display: block;
 }
 
@@ -422,15 +421,12 @@ body {
   cursor: pointer;
   font-size: 20px;
 }
-
 .todos li span.todo-text {
   padding: 0 8px;
 }
-
 .todos li:nth-child(2n) {
   background: #ebd7d1;
 }
-
 .todos li:hover span.todo-trash {
   width: 50px;
   opacity: 1;
@@ -447,11 +443,6 @@ body {
   color: gray;
   -webkit-text-decoration: line-through crimson;
           text-decoration: line-through crimson;
-}
-
-.fa-pencil-alt {
-  float: right;
-  padding-top: 8px 10px;
 }
 
 .fa-trash-alt {
